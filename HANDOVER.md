@@ -222,6 +222,10 @@ Demande de l'utilisateur : garder le style, mais avec comme couleurs principales
    - que faire si le Dashboard est éteint ;
    - la granularité : la tâche entière ou seulement les étapes GPU (la transcription Whisper par exemple).
 4. *(plus tard)* Démarrage avec Windows (spec §11).
+5. *(plus tard, demandé par l'utilisateur le 2026-11-15)* **Arrêt automatique des modules inactifs** : un module allumé qui reste inactif pendant un certain temps doit passer OFF tout seul. Durée à définir avec l'utilisateur, sans doute 30 minutes ou 1 heure (à rendre réglable). À spécifier avec lui avant de coder :
+   - ce qui compte comme « inactif » : état `ON` sans tâche (ni `WORKING` ni `WAITING`), et/ou aucune requête de l'interface du module pendant ce temps ;
+   - si le dashboard prévient avant d'éteindre (compte à rebours sur la carte) ;
+   - ce qui se passe si le Dashboard lui-même est éteint (les modules continuent de tourner, cf. README).
 
 ### Reproduire l'essai visuel (conteneur Linux)
 
